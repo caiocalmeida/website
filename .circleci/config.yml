@@ -7,11 +7,17 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install netlify cli
-          command: sudo npm install netlify-cli -g
+        name: Install netlify cli
+        command: sudo npm install netlify-cli -g
       - run:
-          name: Deploy to Netlify
-          command: sudo netlify deploy -p --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --dir=build
+        name: Yarn
+        command: sudo yarn --frozen-lockfile
+      - run:
+        name: Build
+        command: sudo yarn build
+      - run:
+        name: Deploy to Netlify
+        command: sudo netlify deploy -p --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --dir=out
 workflows:
   version: 2
   deploy-workflow:

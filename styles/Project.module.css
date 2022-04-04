@@ -1,0 +1,142 @@
+.projectCard {
+  margin: 1rem 0;
+  padding: 0.8rem 1rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  min-width: 24rem;
+  min-height: 12rem;
+  max-width: 24rem;
+  max-height: 12rem;
+  position: relative;
+  overflow: hidden;
+  background-color: #202026;
+  color: #e8e8e8;
+  z-index: 0;
+  position: relative;
+}
+
+.dotnetCard {
+  border-top: 0.15rem solid #512bd4;
+}
+
+.golangCard {
+  border-top: 0.15rem solid #74cddd;
+}
+
+.reactCard {
+  border-top: 0.15rem solid #61dafb;
+}
+
+.projectHeaderContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.6rem;
+  height: fit-content;
+  width: fit-content;
+  z-index: 2;
+}
+
+.projectCard > h3 {
+  margin: 0;
+  font-weight: normal;
+}
+
+ .projectLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  gap: 0.1rem;
+  background-color: white;
+  border-radius: 0.6rem;
+  padding: 0.2rem 0.3rem;
+  margin-top: 0.6rem;
+}
+
+.githubProject {
+  position: relative;
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.projectLink p {
+  margin: 0;
+  font-size: 0.7rem;
+  color: black;
+  font-weight: bold;
+}
+
+.link {
+  position: relative;
+  width: 0.6rem;
+  height: 0.6rem;
+  margin-top: 0.1rem;
+}
+
+.techList {
+  margin: 0;
+  padding: 0;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 50%;
+  width: 16rem;
+  row-gap: 0.8rem;
+  column-gap: 0.8rem;
+  align-items: flex-end;
+  align-content: center;
+}
+
+.techList > li {
+  width: fit-content;
+  background-color: #303038;
+  color: #e8e8e8;
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  pointer-events: none;
+}
+
+.dotnetTag {
+  border-top: 1px solid #512bd4;
+  border-left: 1px solid #512bd4;
+}
+
+.golangTag {
+  border-top: 1px solid #74cddd;
+  border-left: 1px solid #74cddd;
+}
+
+.reactTag {
+  border-top: 1px solid #61dafb;
+  border-left: 1px solid #61dafb;
+}
+
+.projectCard > span {
+  z-index: -1;
+  pointer-events: none;
+}
+
+.dotnetBg{
+  z-index: -1;
+  pointer-events: none;
+  object-position: 14rem 2rem;
+  opacity: 0.1;
+}
+
+.golangBg {
+  z-index: -1;
+  pointer-events: none;
+  object-position: 18rem 3.5rem;
+  opacity: 0.5;
+}
+
+.reactBg {
+  z-index: 1;
+  pointer-events: none;
+  object-position: 13rem 3rem;
+  opacity: 0.2;
+}
