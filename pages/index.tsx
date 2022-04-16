@@ -15,7 +15,7 @@ const Home: NextPage = () => {
           <h1>Hi! <br />I&apos;m Caio&nbsp;Almeida.</h1>
           <h3>I build software focusing on quality and agility.</h3>
           <p>
-            I have four years of professional experience building and maintaining software. In this time, I&apos;ve had the opportunity to work on microservices, monolithic web services, front-end web apps, mobile apps for Android and iOS, chatbots and more.
+            I have four years of professional experience designing, building and maintaining software. In this time, I&apos;ve had the opportunity to work on microservices, monolithic web services, front-end web apps, mobile apps for Android and iOS, chatbots and more.
           </p>
         </section>
         <section id='Projects' className={styles.projects}>
@@ -24,17 +24,22 @@ const Home: NextPage = () => {
             title='.NET Web Service'
             link='https://github.com/caiocalmeida/dotnet-webservice-ref'
             type={ProjectType.Dotnet}
-            tags={['HTTP', 'REST', 'SQL', '.NET 6', 'ASP.NET', 'Azure']} />
+            tags={['REST', 'GraphQL', 'SQL', '.NET 6', 'ASP.NET', 'Azure']} />
           <Project
             title='Go Web Service'
             link='https://github.com/caiocalmeida/golang-webservice-ref'
             type={ProjectType.Go}
-            tags={['HTTP', 'REST', 'SQL', 'Gin', 'Go']} />
+            tags={['REST', 'SQL', 'Gin', 'Go']} />
           <Project
             title='This website'
             link='https://github.com/caiocalmeida/website'
             type={ProjectType.React}
             tags={['HTML', 'CSS', 'Node.js', 'Next.js', 'Typescript', 'CircleCI']} />
+          <Project
+            title='.NET API Gateway'
+            link='https://github.com/caiocalmeida/api-gateway'
+            type={ProjectType.Dotnet}
+            tags={['Ocelot', 'REST', 'GraphQL', '.NET 6', 'ASP.NET', 'Azure']} />
         </section>
       </main>
     </>
