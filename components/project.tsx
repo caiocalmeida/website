@@ -6,15 +6,36 @@ export default function Project(props: ProjectProps) {
   return (
     <article className={`${styles.projectCard} ${getCardClass(props.type)}`}>
       <h3>{props.title}</h3>
-      <a href={props.link} target='_blank' rel="noreferrer" className={styles.projectLink}>
-        <div className={styles.githubProject}>
-          <Image src='/github.svg' alt='GitHub Icon' layout='fill' />
-        </div>
-        <p>Source</p>
-        <div className={styles.link}>
-          <Image src='/link.svg' alt='' layout='fill' />
-        </div>
-      </a>
+      <ul className={styles.links}>
+        <li>
+          <a href={props.srcLink} target='_blank' rel="noreferrer" className={styles.projectLink}>
+            <p>Source</p>
+            <div className={styles.link}>
+              <Image src='/link.svg' alt='' layout='fill' />
+            </div>
+          </a>
+        </li>
+        { props.swaggerLink &&
+          <li>
+            <a href={props.swaggerLink} target='_blank' rel="noreferrer" className={styles.swaggerLink}>
+              <p>Swagger</p>
+              <div className={styles.link}>
+                <Image src='/link.svg' alt='' layout='fill' />
+              </div>
+            </a>
+          </li>
+        }
+        { props.graphqlLink &&
+          <li>
+            <a href={props.graphqlLink} target='_blank' rel="noreferrer" className={styles.graphqlLink}>
+              <p>GraphQL</p>
+              <div className={styles.link}>
+                <Image src='/link.svg' alt='' layout='fill' />
+              </div>
+            </a>
+          </li>
+        }
+      </ul>
       <ul className={styles.techList}>
         { props.tags.map((tag, i) => 
           <li className={getTagClass(props.type)} key={i}>{tag}</li>
@@ -35,7 +56,9 @@ interface ProjectProps {
   title: string
   tags: string[]
   type: ProjectType
-  link: string
+  srcLink: string
+  swaggerLink?: string
+  graphqlLink?: string
 }
 
 function getBackgroundImageClass(type: ProjectType) {

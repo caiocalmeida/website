@@ -22,22 +22,24 @@ const Home: NextPage = () => {
           <h2 className={styles.sectionHeader}>Projects</h2>
           <Project
             title='.NET Web Service'
-            link='https://github.com/caiocalmeida/dotnet-webservice-ref'
+            srcLink='https://github.com/caiocalmeida/dotnet-webservice-ref'
+            swaggerLink='https://caiocalmeida-api-gateway.azurewebsites.net/swagger'
+            graphqlLink='https://caiocalmeida-api-gateway.azurewebsites.net/graphql'
             type={ProjectType.Dotnet}
             tags={['REST', 'GraphQL', 'SQL', '.NET 6', 'ASP.NET', 'Azure']} />
           <Project
             title='Go Web Service'
-            link='https://github.com/caiocalmeida/golang-webservice-ref'
+            srcLink='https://github.com/caiocalmeida/golang-webservice-ref'
             type={ProjectType.Go}
             tags={['REST', 'SQL', 'Gin', 'Go']} />
           <Project
             title='This website'
-            link='https://github.com/caiocalmeida/website'
+            srcLink='https://github.com/caiocalmeida/website'
             type={ProjectType.React}
             tags={['HTML', 'CSS', 'Node.js', 'Next.js', 'Typescript', 'CircleCI']} />
           <Project
             title='.NET API Gateway'
-            link='https://github.com/caiocalmeida/api-gateway'
+            srcLink='https://github.com/caiocalmeida/api-gateway'
             type={ProjectType.Dotnet}
             tags={['Ocelot', 'REST', 'GraphQL', '.NET 6', 'ASP.NET', 'Azure']} />
         </section>

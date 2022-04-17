@@ -29,7 +29,7 @@
   border-top: 0.15rem solid #61dafb;
 }
 
-.projectHeaderContainer {
+.links {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -37,6 +37,8 @@
   height: fit-content;
   width: fit-content;
   z-index: 2;
+  padding: 0;
+  margin: 0;
 }
 
 .projectCard > h3 {
@@ -44,7 +46,7 @@
   font-weight: normal;
 }
 
- .projectLink {
+.projectLink {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -52,17 +54,36 @@
   gap: 0.1rem;
   background-color: white;
   border-radius: 0.6rem;
-  padding: 0.2rem 0.3rem;
+  padding: 0.2rem 0.4rem;
   margin-top: 0.6rem;
 }
 
-.githubProject {
-  position: relative;
-  width: 0.8rem;
-  height: 0.8rem;
+.swaggerLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  gap: 0.1rem;
+  background-color: #baf388;
+  border-radius: 0.6rem;
+  padding: 0.2rem 0.4rem;
+  margin-top: 0.6rem;
 }
 
-.projectLink p {
+.graphqlLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  gap: 0.1rem;
+  background-color: #f6b2e0
+  ;
+  border-radius: 0.6rem;
+  padding: 0.2rem 0.4rem;
+  margin-top: 0.6rem;
+}
+
+.projectLink p, .swaggerLink p, .graphqlLink p {
   margin: 0;
   font-size: 0.7rem;
   color: black;
