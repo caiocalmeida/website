@@ -7,8 +7,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #202028;
-  color: #e8e8e8;
+  background-color: var(--main-foreground-color);
+  color: var(--main-text-color);
   z-index: 3;
 }
 
@@ -47,16 +47,16 @@
 }
 
 .navlist > li {
-  border-top: 1px solid #303038;
+  border-top: 1px solid var(--main-foreground-accent-color);
   margin: 0 -0.5rem;
 }
 
 .navlist > li:last-child {
-  border-bottom: 1px solid #303038;
+  border-bottom: 1px solid var(--main-foreground-accent-color);
 }
 
 .navlist > li:hover {
-  background-color: #303038;
+  background-color: var(--main-foreground-accent-color);
 }
 
 .navlist > li > a {
@@ -100,8 +100,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #202028;
-    color: #e8e8e8;
+    background-color: var(--main-foreground-color);
+    color: var(--main-text-color);
     z-index: 3;
   }
 
@@ -131,7 +131,7 @@
   .navlist > li {
     border: none;
     margin: 0;
-    border-left: 1px solid #303038;
+    border-left: 1px solid var(--main-foreground-accent-color);
   }
 
   .navlist > li:first-child {
@@ -143,8 +143,8 @@
   }
   
   .navlist > li:hover {
-    color: #9ff;
-    background-color: #202028;
+    color: var(--main-text-accent-color);
+    background-color: var(--main-foreground-color);
   }
 
   .contactlist {

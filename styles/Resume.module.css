@@ -3,7 +3,7 @@
   flex-direction: row;
   margin: 1rem auto;
   padding: 1.4rem 3rem;
-  background-color: #e8e8e8;
+  background-color: var(--main-text-color);
   width: 48rem;
   flex-wrap: wrap;
 }
@@ -22,8 +22,8 @@
 }
 
 .main > header {
-  background-color: #202028;
-  color: #e8e8e8;
+  background-color: var(--main-foreground-color);
+  color: var(--main-text-color);
   padding: 1rem 1rem;
   height: fit-content;
   width: 100%;
@@ -42,8 +42,8 @@
   width: 25%;
   padding: .5rem .4rem;
   margin-top: .5rem;
-  background-color: #202028;
-  color: #e8e8e8;
+  background-color: var(--main-foreground-color);
+  color: var(--main-text-color);
 }
 
 .main aside a {
@@ -51,7 +51,7 @@
 }
 
 .main aside a:hover {
-  color: #9ff;
+  color: var(--main-text-accent-color);
 }
 
 .contactList {
@@ -68,7 +68,7 @@
 }
 
 .main section > h1 {
-  border-bottom: 1px solid #202028;
+  border-bottom: 1px solid var(--main-foreground-color);
   font-size: 1.3rem;
 }
 
@@ -136,10 +136,10 @@
 
 .main footer {
   width: 100%;
-  border-top: 1px solid #777;
+  border-top: 1px solid var(--light-text-washed-color);
   text-align: end;
   font-size: 0.8rem;
-  color: #777;
+  color: var(--light-text-washed-color);
   margin-top: 1rem;
   padding-top: 0.2rem;
   padding-right: 1rem;

@@ -11,22 +11,22 @@
   max-height: 12rem;
   position: relative;
   overflow: hidden;
-  background-color: #202026;
-  color: #e8e8e8;
+  background-color: var(--main-foreground-color);
+  color: var(--main-text-color);
   z-index: 0;
   position: relative;
 }
 
 .dotnetCard {
-  border-top: 0.15rem solid #512bd4;
+  border-top: 0.15rem solid var(--dotnet-color);
 }
 
 .golangCard {
-  border-top: 0.15rem solid #74cddd;
+  border-top: 0.15rem solid var(--golang-color);
 }
 
 .reactCard {
-  border-top: 0.15rem solid #61dafb;
+  border-top: 0.15rem solid var(--react-color);
 }
 
 .links {
@@ -52,7 +52,7 @@
   align-items: center;
   width: fit-content;
   gap: 0.1rem;
-  background-color: white;
+  background-color: var(--github-tag-color);
   border-radius: 0.6rem;
   padding: 0.2rem 0.4rem;
   margin-top: 0.6rem;
@@ -64,7 +64,7 @@
   align-items: center;
   width: fit-content;
   gap: 0.1rem;
-  background-color: #baf388;
+  background-color: var(--swagger-tag-color);
   border-radius: 0.6rem;
   padding: 0.2rem 0.4rem;
   margin-top: 0.6rem;
@@ -76,8 +76,7 @@
   align-items: center;
   width: fit-content;
   gap: 0.1rem;
-  background-color: #f6b2e0
-  ;
+  background-color: var(--graphql-tag-color);
   border-radius: 0.6rem;
   padding: 0.2rem 0.4rem;
   margin-top: 0.6rem;
@@ -86,7 +85,7 @@
 .projectLink p, .swaggerLink p, .graphqlLink p {
   margin: 0;
   font-size: 0.7rem;
-  color: black;
+  color: var(--tag-text-color);
   font-weight: bold;
 }
 
@@ -114,26 +113,26 @@
 
 .techList > li {
   width: fit-content;
-  background-color: #303038;
-  color: #e8e8e8;
+  background-color: var(--main-foreground-accent-color);
+  color: var(--main-text-color);
   padding: 0.3rem;
   font-size: 0.8rem;
   pointer-events: none;
 }
 
 .dotnetTag {
-  border-top: 1px solid #512bd4;
-  border-left: 1px solid #512bd4;
+  border-top: 1px solid var(--dotnet-color);
+  border-left: 1px solid var(--dotnet-color);
 }
 
 .golangTag {
-  border-top: 1px solid #74cddd;
-  border-left: 1px solid #74cddd;
+  border-top: 1px solid var(--golang-color);
+  border-left: 1px solid var(--golang-color);
 }
 
 .reactTag {
-  border-top: 1px solid #61dafb;
-  border-left: 1px solid #61dafb;
+  border-top: 1px solid var(--react-color);
+  border-left: 1px solid var(--react-color);
 }
 
 .projectCard > span {

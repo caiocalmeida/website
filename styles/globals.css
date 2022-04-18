@@ -30,11 +30,30 @@ body {
   margin: 0;
   font-family: 'Lato', sans-serif;
   min-width: 320px;
-  background-color: #181820;
+  background-color: var(--main-bg-color);
 }
 
 :root {
   font-size: 10px;
+
+  --main-bg-color: #181820;
+
+  --main-foreground-color: #202026;
+  --main-foreground-accent-color: #303038;
+
+  --main-text-color: #e8e8e8;
+  --main-text-accent-color: #9ff;
+
+  --light-text-washed-color: #777;
+
+  --dotnet-color: #512bd4;
+  --golang-color: #74cddd;
+  --react-color: #61dafb;
+
+  --github-tag-color: #fff;
+  --swagger-tag-color: #baf388;
+  --graphql-tag-color: #f6b2e0;
+  --tag-text-color: #000;
 }
 
 @media only screen and (min-width: 400px) {
