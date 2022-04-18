@@ -8,7 +8,7 @@ export default function Project(props: ProjectProps) {
       <h3>{props.title}</h3>
       <ul className={styles.links}>
         <li>
-          <a href={props.srcLink} target='_blank' rel="noreferrer" className={styles.projectLink}>
+          <a href={props.srcLink} target='_blank' rel="noreferrer" className={`${styles.projectTag} ${styles.sourceLink}`}>
             <p>Source</p>
             <div className={styles.link}>
               <Image src='/link.svg' alt='' layout='fill' />
@@ -17,7 +17,7 @@ export default function Project(props: ProjectProps) {
         </li>
         { props.swaggerLink &&
           <li>
-            <a href={props.swaggerLink} target='_blank' rel="noreferrer" className={styles.swaggerLink}>
+            <a href={props.swaggerLink} target='_blank' rel="noreferrer" className={`${styles.projectTag} ${styles.swaggerLink}`}>
               <p>Swagger</p>
               <div className={styles.link}>
                 <Image src='/link.svg' alt='' layout='fill' />
@@ -27,8 +27,18 @@ export default function Project(props: ProjectProps) {
         }
         { props.graphqlLink &&
           <li>
-            <a href={props.graphqlLink} target='_blank' rel="noreferrer" className={styles.graphqlLink}>
+            <a href={props.graphqlLink} target='_blank' rel="noreferrer" className={`${styles.projectTag} ${styles.graphqlLink}`}>
               <p>GraphQL</p>
+              <div className={styles.link}>
+                <Image src='/link.svg' alt='' layout='fill' />
+              </div>
+            </a>
+          </li>
+        }
+        { props.docsLink &&
+          <li>
+            <a href={props.docsLink} target='_blank' rel="noreferrer" className={`${styles.projectTag} ${styles.docsLink}`}>
+              <p>Docs</p>
               <div className={styles.link}>
                 <Image src='/link.svg' alt='' layout='fill' />
               </div>
@@ -59,6 +69,7 @@ interface ProjectProps {
   srcLink: string
   swaggerLink?: string
   graphqlLink?: string
+  docsLink?: string
 }
 
 function getBackgroundImageClass(type: ProjectType) {

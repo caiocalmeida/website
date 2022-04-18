@@ -46,43 +46,34 @@
   font-weight: normal;
 }
 
-.projectLink {
+.projectTag {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: fit-content;
   gap: 0.1rem;
-  background-color: var(--github-tag-color);
   border-radius: 0.6rem;
   padding: 0.2rem 0.4rem;
   margin-top: 0.6rem;
+}
+
+.sourceLink {
+  background-color: var(--github-tag-color);
 }
 
 .swaggerLink {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: fit-content;
-  gap: 0.1rem;
   background-color: var(--swagger-tag-color);
-  border-radius: 0.6rem;
-  padding: 0.2rem 0.4rem;
-  margin-top: 0.6rem;
 }
 
 .graphqlLink {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: fit-content;
-  gap: 0.1rem;
   background-color: var(--graphql-tag-color);
-  border-radius: 0.6rem;
-  padding: 0.2rem 0.4rem;
-  margin-top: 0.6rem;
 }
 
-.projectLink p, .swaggerLink p, .graphqlLink p {
+.docsLink {
+  background-color: var(--docs-tag-color);
+}
+
+.projectTag p {
   margin: 0;
   font-size: 0.7rem;
   color: var(--tag-text-color);

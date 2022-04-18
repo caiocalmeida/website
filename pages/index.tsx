@@ -40,6 +40,7 @@ const Home: NextPage = () => {
           <Project
             title='.NET API Gateway'
             srcLink='https://github.com/caiocalmeida/api-gateway'
+            docsLink='https://caiocalmeida-api-gateway.azurewebsites.net'
             type={ProjectType.Dotnet}
             tags={['Ocelot', 'REST', 'GraphQL', '.NET 6', 'ASP.NET', 'Azure']} />
         </section>
