@@ -1,16 +1,16 @@
 .main {
   display: flex;
   flex-direction: row;
-  margin: 1rem auto;
+  margin: 5rem auto 1rem;
   padding: 1.4rem 3rem;
   background-color: var(--main-text-color);
   width: 48rem;
   flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .main {
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
 }
 

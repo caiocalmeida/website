@@ -1,18 +1,21 @@
 .nav {
   position: fixed;
-  padding: 0.5rem;
+  padding: 1rem;
   top: 0;
-  height: 100%;
-  width: fit-content;
+  left: 0;
+  height: fit-content;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   background-color: var(--main-foreground-color);
   color: var(--main-text-color);
   z-index: 3;
 }
 
 .imgcontainer {
+  display: none;
   width: 5rem;
   height: 5rem;
   position: relative;
@@ -23,10 +26,12 @@
 }
 
 .nav > h2 {
-  margin: 0.3rem 0 0;
+  margin: 0;
   padding: 0;
   font-size: 1.2rem;
   font-weight:normal;
+  width: 100%;
+  text-align: center;
 }
 
 .nav > h3 {
@@ -38,25 +43,44 @@
   font-weight:normal;
 }
 
+.nav > h2, .nav > h3 {
+  display: none;
+}
+
 .navlist {
   padding: 0;
-  margin-top: 10rem;
-  width: 100%;
+  margin: 0;
+  width: fit-content;
   font-size: 0.9rem;
   text-align: center;
+  display: flex;
 }
 
 .navlist > li {
-  border-top: 1px solid var(--main-foreground-accent-color);
-  margin: 0 -0.5rem;
+  margin: 0;
+  border-left: 1px solid var(--main-foreground-accent-color);
+}
+
+.navlist > li:first-child {
+  border-left: none;
 }
 
 .navlist > li:last-child {
-  border-bottom: 1px solid var(--main-foreground-accent-color);
+  border-bottom: none;
 }
 
 .navlist > li:hover {
-  background-color: var(--main-foreground-accent-color);
+  color: var(--main-text-accent-color);
+}
+
+.contactlist {
+  padding: 0;
+  margin: 0;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
 }
 
 .navlist > li > a {
@@ -64,15 +88,6 @@
   display:inline-block;
   height: 100%;
   width: 100%;
-}
-
-.contactlist {
-  padding: 0.4rem 0.5rem;
-  margin: auto 0 0.4rem;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .github {
@@ -89,69 +104,61 @@
   filter: invert(92%);
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .nav {
     position: fixed;
-    padding: 1rem;
+    padding: 0.5rem;
     top: 0;
-    height: fit-content;
-    width: 100%;
+    left: 0;
+    height: 100%;
+    width: fit-content;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: var(--main-foreground-color);
     color: var(--main-text-color);
     z-index: 3;
   }
 
   .imgcontainer {
-    display: none;
+    display: inline;
   }
 
   .nav > h2 {
-    margin: 0;
-    padding: 0;
-    font-size: 1.2rem;
-    font-weight:normal;
-    width: 100%;
-    text-align: center;
+    margin: 0.3rem 0 0;
   }
 
   .nav > h2, .nav > h3 {
-    display: none;
+    display: inline;
   }
 
   .navlist {
-    margin: 0;
-    width: fit-content;
-    display: flex;
-  }
-  
-  .navlist > li {
-    border: none;
-    margin: 0;
-    border-left: 1px solid var(--main-foreground-accent-color);
+    margin-top: 10rem;
+    width: 100%;
+    display: inline;
   }
 
-  .navlist > li:first-child {
-    border-left: none;
+  .navlist > li {
+    border: none;
+    border-top: 1px solid var(--main-foreground-accent-color);
+    margin: 0 -0.5rem;
   }
 
   .navlist > li:last-child {
-    border-bottom: none;
+    border-bottom: 1px solid var(--main-foreground-accent-color);
   }
-  
+
   .navlist > li:hover {
-    color: var(--main-text-accent-color);
-    background-color: var(--main-foreground-color);
+    background-color: var(--main-foreground-accent-color);
+    color: var(--main-text-color);
   }
 
   .contactlist {
-    justify-content: flex-end;
-    gap: 1rem;
-    padding: 0;
-    margin: 0;
-    width: fit-content;
+    padding: 0.4rem 0.5rem;
+    margin: auto 0 0.4rem;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
   }
 }
