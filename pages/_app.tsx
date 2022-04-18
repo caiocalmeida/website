@@ -6,8 +6,8 @@ import Nav from '../components/nav';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-    <Nav />
-    <Component {...pageProps} />
+      <Nav />
+      <Component {...pageProps} />
     </>
   );
 }
